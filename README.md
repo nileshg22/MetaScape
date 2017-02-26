@@ -3,7 +3,7 @@ Making traveling a community
   * Our program allows users to create their trip itineraries and have other people edit them
 
 ## USAGE
-  * [When traveling to a different state or even country, people can recieve feedback on what places to visit, which hotel to stay in, or where to rent a car from. 
+  * When traveling to a different state or even country, people can recieve feedback on what places to visit, which hotel to stay in, or where to rent a car from. 
   
 ## BUILD Process
   * PHP
