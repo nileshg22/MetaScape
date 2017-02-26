@@ -1,0 +1,100 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:12px;
+  font-weight:600;
+/**/
+  color:#fff;
+}
+h1 {
+  color:#fff;
+}
+/**/
+.header {
+  top:0; left:0;
+  position: fixed;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+#bgvid, #bgpic {
+  min-width:100%;
+  min-height:100%;
+  width:100%;
+  height:auto;
+  position: absolute;
+  z-index:-100;
+}
+
+#buttons {
+  position:absolute;
+  width: 300px;
+  right:50px;
+  top:50%;
+  transform:translateY(-50%);
+  text-align: center;
+  transition: all 0.5s ease;
+}
+#buttons img {
+  width:200px;
+  z-index:100;
+  cursor:pointer;
+}
+.ghost-button {
+  position: relative;
+  z-index:100;
+  display: block;
+  width: 300px;
+  padding: 8px;
+  margin:20px 0 20px 0;
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.1s linear;
+  cursor:pointer;
+}
+.ghost-button:hover,
+.ghost-button:active,
+.ghost-button:focus {
+  text-decoration: none;
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+  transition: all 0.1s linear;
+}
+
+.page {
+  position:absolute;
+  top:0; left:0;
+  padding:10px;
+  width:55%;
+  height:auto;
+  min-height:100%;
+  text-align: center;
+}
+
+@media only screen and (max-width : 1020px) {
+  #bgvid, #bgpic {
+    height:100%;
+    width:auto;
+  }
+  #buttons {
+    right:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .page {
+    position:absolute;
+    width:100%;
+    top:100%;
+    background-color: #0A97BC;
+  }
+}
